@@ -21,20 +21,37 @@ body {
     width: 100%;
     min-height: 100vh;
 
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
     background-image: url("hero.webp");
     background-size: cover;
     background-position: center 72%;
     background-repeat: no-repeat;
 
-    position: relative;
+    animation: slowZoom 25s ease-in-out infinite alternate;
 }
-
 
 /* =========================
    DESKTOP CONTENT
 ========================= */
 
 .content {
+
+      position: relative;
+    z-index: 1;
+
     width: 100%;
 
     padding-top: 18vh;
@@ -192,6 +209,47 @@ body {
 
    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
 }
+/* =========================
+   ANIMATION
+========================= */
+.left-text {
+    animation: fadeUp 1.5s ease-out 0.3s both;
+}
+
+.center-logos {
+    animation: fadeUp 1.5s ease-out 0.6s both;
+}
+
+.right-text {
+    animation: fadeUp 1.5s ease-out 0.9s both;
+}
+
+@keyframes fadeUp {
+
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+@keyframes slowZoom {
+
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.03);
+    }
+
+}
+
 
 
 /* =========================
