@@ -258,9 +258,6 @@ body {
 
 @media (max-width: 768px) {
 
-   .hero::before {
-        background-size: 108% auto;
-    }
     .content {
 
         padding: 50px 25px;
