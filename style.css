@@ -250,6 +250,18 @@ body {
 
 }
 
+@keyframes mobileZoom {
+
+    from {
+        transform: scale(1.05);
+    }
+
+    to {
+        transform: scale(1.08);
+    }
+
+}
+
 
 
 /* =========================
@@ -258,6 +270,10 @@ body {
 
 @media (max-width: 768px) {
 
+
+   .hero::before {
+    animation-name: mobileZoom;
+}
     .content {
 
         padding: 50px 25px;
