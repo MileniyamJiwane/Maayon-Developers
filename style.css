@@ -81,3 +81,35 @@ body {
     letter-spacing: 5px;
     font-weight: 600;
 }
+
+@media (max-width: 768px) {
+
+    .content {
+        padding: 40px 20px;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 30px;
+    }
+
+    .left-text {
+        width: 90%;
+        font-size: 15px;
+    }
+
+    .center-logo {
+        font-size: 24px;
+    }
+
+    .right-text {
+        width: 90%;
+
+        text-align: center;
+
+        font-size: 16px;
+        letter-spacing: 3px;
+    }
+
+}
