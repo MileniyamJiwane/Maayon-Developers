@@ -217,11 +217,11 @@ body {
 }
 
 .center-logos {
-    animation: fadeUp 1.5s ease-out 1.2s both;
+    animation: fadeUp 1.5s ease-out 1s both;
 }
 
 .right-text {
-    animation: fadeUp 1.5s ease-out 2.1s both;
+    animation: fadeUp 1.5s ease-out 1.8s both;
 }
 
 @keyframes fadeUp {
