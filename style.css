@@ -1,3 +1,7 @@
+/* =========================
+   GENERAL
+========================= */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -8,6 +12,11 @@ body {
     font-family: "Manrope", sans-serif;
 }
 
+
+/* =========================
+   HERO
+========================= */
+
 .hero {
     width: 100%;
     min-height: 100vh;
@@ -15,14 +24,20 @@ body {
     background-image: url("hero.webp");
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 
     position: relative;
 }
 
+
+/* =========================
+   DESKTOP CONTENT
+========================= */
+
 .content {
     width: 100%;
 
-    padding-top: 25vh;
+    padding-top: 18vh;
     padding-left: 9vw;
     padding-right: 9vw;
 
@@ -33,101 +48,213 @@ body {
     align-items: start;
 }
 
+
+/* =========================
+   LEFT TEXT
+========================= */
+
 .left-text {
-    width: 30%;
+    width: 390px;
 
     color: white;
+
     text-align: center;
 
+    font-family: "Manrope", sans-serif;
+
     font-size: 18px;
+
     line-height: 1.4;
+
+    justify-self: start;
 }
+
+
+/* =========================
+   CENTRE LOGOS
+========================= */
+
+.center-logos {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 25px;
+}
+
+
+/* =========================
+   MAAYON LOGO
+========================= */
+
+.maayon-logo {
+
+    width: 155px;
+
+    height: auto;
+
+    display: block;
+}
+
+
+/* =========================
+   X
+========================= */
+
 .x {
+
     color: white;
+
     font-family: "El Messiri", serif;
-    font-size: 18px;
+
+    font-size: 22px;
+
     font-weight: 400;
+
     line-height: 1;
-}
-.center-logo {
-    color: white;
-    text-align: center;
 
-    font-size: 30px;
-    letter-spacing: 3px;
+    margin: 0 5px;
 }
 
-.center-logo span {
+
+/* =========================
+   ANJANA LOGO
+========================= */
+
+.anjana-logo {
+
+    width: 155px;
+
+    height: auto;
+
     display: block;
-
-    font-size: 12px;
-    letter-spacing: 4px;
 }
 
-.x {
-    margin: 10px;
-    font-size: 18px;
-}
 
-.center-logo strong {
-    display: block;
-
-    font-size: 16px;
-    letter-spacing: 1px;
-}
-
-.center-logo small {
-    display: block;
-
-    font-size: 8px;
-    letter-spacing: 1px;
-}
+/* =========================
+   RIGHT TEXT
+========================= */
 
 .right-text {
-    width: 25%;
+
+    width: 390px;
 
     color: white;
 
-    font-size: 18px;
-    letter-spacing: 5px;
-    font-weight: 600;
+    text-align: left;
+
+    justify-self: end;
 }
+
+
+/* KAILASH AVENUE */
+
+.project-name {
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 20px;
+
+    font-weight: 600;
+
+    letter-spacing: 6px;
+
+    line-height: 1.3;
+}
+
+
+/* COMING SOON */
+
+.coming-soon {
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 20px;
+
+    font-weight: 600;
+
+    letter-spacing: 6px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
 
 @media (max-width: 768px) {
 
     .content {
-        padding: 40px 20px;
+
+        padding: 50px 25px;
+
+        display: flex;
 
         flex-direction: column;
 
         align-items: center;
 
-        gap: 30px;
+        gap: 35px;
     }
 
+
     .left-text {
-        width: 90%;
+
+        width: 100%;
+
         font-size: 15px;
     }
 
-    .center-logo {
-        font-size: 24px;
-    }
 
     .center-logos {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 25px;
+
+        gap: 15px;
     }
 
+
+    .maayon-logo {
+
+        width: 110px;
+    }
+
+
+    .anjana-logo {
+
+        width: 110px;
+    }
+
+
+    .x {
+
+        font-size: 18px;
+    }
+
+
     .right-text {
-        width: 90%;
+
+        width: 100%;
 
         text-align: center;
+    }
+
+
+    .project-name {
 
         font-size: 16px;
-        letter-spacing: 3px;
+
+        letter-spacing: 4px;
+    }
+
+
+    .coming-soon {
+
+        font-size: 15px;
+
+        letter-spacing: 4px;
     }
 
 }
